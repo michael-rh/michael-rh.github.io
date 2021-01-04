@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<!--<script src="js/three.js"></script>-->
-		<script type="module">
+		<script>
 
   			// Find the latest version by visiting https://unpkg.com/three. The URL will
   			// redirect to the newest stable release.
@@ -19,10 +19,6 @@
 			import { GUI } from 'https://unpkg.com/three/examples/jsm/libs/dat.gui.module.js';
 
 			import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
-
-		</script>
-
-		<script>
 
 			let camera, scene, renderer;//, startTime, object, stats;
 
@@ -42,7 +38,7 @@
 				const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 				const cube = new THREE.Mesh( geometry, material );
 				scene.add( cube );
-			}
+			};
 
 			const animate = function() {
 				requestAnimationFrame( animate );
